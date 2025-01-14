@@ -12,9 +12,9 @@ jobs:
     - name: create_env
       run: |
         touch .env
-        echo VUE_APP_EMAILJS_SERVICE="${{ secrets.VUE_APP_EMAILJS_SERVICE }}" >> .env
-        echo VUE_APP_EMAILJS_TEMPLATE="${{ secrets.VUE_APP_EMAILJS_TEMPLATE }}" >> .env
-        echo VUE_APP_EMAILJS_KEY="${{ secrets.VUE_APP_EMAILJS_KEY }}" >> .env 
+        echo VUE_APP_EMAILJS_SERVICE=${{ secrets.VUE_APP_EMAILJS_SERVICE }} >> .env
+        echo VUE_APP_EMAILJS_TEMPLATE=${{ secrets.VUE_APP_EMAILJS_TEMPLATE }} >> .env
+        echo VUE_APP_EMAILJS_KEY=${{ secrets.VUE_APP_EMAILJS_KEY }} >> .env 
     - id: Build-Vue
       uses: xRealNeon/VuePagesAction@1.0.1
       with:
