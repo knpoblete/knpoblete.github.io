@@ -271,6 +271,8 @@ const service = process.env.VUE_APP_EMAILJS_SERVICE;
 const template = process.env.VUE_APP_EMAILJS_TEMPLATE;
 const key = process.env.VUE_APP_EMAILJS_KEY;
 
+console.log(service, template, key)
+
 export default {
   name: 'HomePage',
   props: {
