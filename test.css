@@ -1,0 +1,63 @@
+
+/* #testimonials-section i {
+    font-size: 2rem;
+    color: #717568;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; Add margin to ensure proper spacing
+} */
+
+/* #testimonials-section .swiper {
+    height: 100%;
+    background-color: #BACBA9;
+    width: 100%;
+    padding: 4rem 2rem !important;
+    
+} */
+
+#testimonials-section .swiper .swiper-wrapper {
+    align-items : center;
+}
+
+#testimonials-section .swiper .swiper-wrapper .swiper-slide {
+    height: auto;
+    text-align: center;
+}
+
+
+/* #testimonials-section .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+} */
+
+/* #testimonials-section .card-container {
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 0.2)); 
+    padding: 2rem 2rem !important;
+    height: 100% !important;
+    backdrop-filter: blur(5px);
+    background-clip: padding-box;
+    border: rgb(255 255 255 / var(--tw-bg-opacity, 0.5));
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+} */
+
+/* #testimonials-section .card-container h3 { */
+    /* font-size: 1.5rem;
+    color: #717568;
+    opacity: 1 !important;
+}
+
+#testimonials-section .card-container h4 {
+    font-size: 0.9rem;
+    color: #717568;
+    opacity: 1 !important;
+} */
+
+/* #testimonials-section .swiper-pagination-bullet-active {
+    background-color: #fff !important;
+} */
+
+#testimonials-section .swiper-pagination {
+    position: absolute;
+    /* bottom: -10px;  */
+}

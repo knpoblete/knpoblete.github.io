@@ -1,0 +1,256 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+section:nth-of-type(even) {
+    background-color: #ffffff; /* Light gray for odd sections */
+}
+
+section:nth-of-type(odd) {
+    background-color: #f8f8f8; /* Light gray for odd sections */
+}
+
+section {
+    padding: 8rem 2rem;
+    min-height: 40vh;  
+    /*Reduce the default minimum height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    font-family: "Just Another Hand", serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #717568;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.logo {
+    margin-left: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+#about-section .bio {
+    margin-bottom: 2rem;
+    padding-right: 8rem;
+    max-width: 56.25rem;
+    /* font-size: 1rem; */
+    text-align: left;
+}
+
+#about-section .headshot {
+    margin-bottom: 2rem;
+}
+
+#about-section .headshot img {
+    width: 20rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    /* border: solid; */
+    /* border-color: rgb(113 117 104 / var(--tw-bg-opacity, 0.6)); */
+    /* border-width: 0.25rem; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#about-section .container {
+    padding: 0 4rem;
+}
+
+footer {
+    background-color: #909090;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+#skills-section i {
+    font-size: 3rem;
+    color: #BACBA9;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; /* Add margin to ensure proper spacing */
+}
+
+#skills-section i:hover {
+    transform: scale(1.2);
+    /* color: #3F4739; */
+}
+
+#skills-section img {
+    width: 3rem;
+    height: 3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; /* Add margin to ensure proper spacing */
+}
+
+#skills-section img:hover {
+    transform: scale(1.2);
+    /* color: #3F4739; */
+}
+
+#skills-section .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem; 
+}
+
+#skills-section .tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+
+#skills-section h3 {
+    text-align: center;
+    color: #717568;
+    background-color: #E1F4CB;
+    /* width: 180px; */
+    border-radius: 24px;
+    padding: 12px;
+}
+
+#skills-section h4 {
+    text-align: center;
+    color: #fff;
+    background-color: #BACBA9;
+    /* width: 180px; */
+    border-radius: 24px;
+    padding: 8px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+#skills-section h4:hover {
+    transform: scale(1.2);
+    /* color: #3F4739; */
+}
+
+#projects-section .projects-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap !important; */
+}
+
+/* #projects-section .projects-container { */
+    /* display: flex; */
+    /* width: 100% !important; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* min-width: 40vh !important;   */
+    /* gap: 5rem;  */
+    /* flex-direction: row !important; */
+/* } */
+
+#projects-section .projects-container .x-card-container {
+    /* flex: 1 1 0px; */
+    background-color: #E1F4CB; 
+    padding: 2rem 2rem !important;
+    /* width: 100%; */
+    /* height: 50px !important; */
+    backdrop-filter: blur(5px);
+    background-clip: padding-box;
+    border: rgb(255 255 255 / var(--tw-bg-opacity, 0.5));
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+
+
+#testimonials-section {
+    padding: 4rem 2rem !important;
+    padding-bottom: 8rem !important;
+    width: 100%;
+    background-color: #E1F4CB;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0) !important;
+}
+
+#testimonials-section .card-container {
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 0.4)); 
+    padding: 2rem 2rem !important;
+    height: 100% !important;
+    backdrop-filter: blur(5px);
+    background-clip: padding-box;
+    border: rgb(255 255 255 / var(--tw-bg-opacity, 0.5));
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 16px;
+}
+
+#testimonials-section .card-container:hover {
+    transform: scale(1.05);
+    border: rgb(113 117 104 / var(--tw-bg-opacity, 0.2));
+    border-width: 5px;
+    border-style: solid;
+}
+
+#testimonials-section .swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+#testimonials-section .swiper .swiper-slide {
+    height: auto;
+  }
+  
+#testimonials-section .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+
+#testimonials-section .swiper-pagination-bullet-active {
+    background-color: #717568 !important;
+}
+
+#testimonials-section .card-container h3 {
+    font-size: 1.5rem;
+    color: #717568;
+    opacity: 1 !important;
+    text-align: left;
+}
+
+#testimonials-section .card-container h4 {
+    font-size: 0.9rem;
+    color: #717568;
+    opacity: 1 !important;
+    text-align: left;
+}
+
+#testimonials-section i {
+    font-size: 2rem;
+    color: #717568;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 2rem 0; /* Add margin to ensure proper spacing */
+}
+
+
+#contact-section .form {
+    width: 500px;
+    /* text-align: left; */
+}
+
+#contact-section p {
+    /* font-family: "Just Another Hand", serif !important; */
+    font-weight: bold !important;
+    color: #717568;
+}
