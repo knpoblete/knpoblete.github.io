@@ -271,8 +271,6 @@ const service = "service_9tjhjos";
 const template = "template_t5ep5ke";
 const key = "OPN6WMQT5YFMSdZx0";
 
-console.log(service, template, key)
-
 export default {
   name: 'HomePage',
   props: {
@@ -305,7 +303,6 @@ export default {
             this.showAlert = true
           },
           (error) => {
-            console.log('read...', service, template);
             console.log('FAILED...', error.text);
           },
         );
