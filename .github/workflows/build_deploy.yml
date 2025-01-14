@@ -15,7 +15,7 @@ jobs:
         reponame: 'knpoblete.github.io'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
         useyarn: true
-        env:
-          VUE_APP_EMAILJS_SERVICE: ${{ secrets.VUE_APP_EMAILJS_SERVICE }}
-          VUE_APP_EMAILJS_TEMPLATE: ${{ secrets.VUE_APP_EMAILJS_TEMPLATE }}
-          VUE_APP_EMAILJS_KEY: ${{ secrets.VUE_APP_EMAILJS_KEY }}
+      env:
+        VUE_APP_EMAILJS_SERVICE: ${{ secrets.VUE_APP_EMAILJS_SERVICE }}
+        VUE_APP_EMAILJS_TEMPLATE: ${{ secrets.VUE_APP_EMAILJS_TEMPLATE }}
+        VUE_APP_EMAILJS_KEY: ${{ secrets.VUE_APP_EMAILJS_KEY }}
