@@ -267,9 +267,9 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import emailjs from '@emailjs/browser';
 
-const service = process.env.VUE_APP_EMAILJS_SERVICE;
-const template = process.env.VUE_APP_EMAILJS_TEMPLATE;
-const key = process.env.VUE_APP_EMAILJS_KEY;
+const service = "service_9tjhjos";
+const template = "template_t5ep5ke";
+const key = "OPN6WMQT5YFMSdZx0";
 
 console.log(service, template, key)
 
