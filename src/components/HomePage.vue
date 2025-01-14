@@ -295,8 +295,8 @@ export default {
   methods: {
     sendEmail() {
       emailjs
-        .sendForm(service, template, this.$refs.form, {
-          publicKey: key,
+        .sendForm(VUE_APP_EMAILJS_SERVICE, VUE_APP_EMAILJS_TEMPLATE, this.$refs.form, {
+          publicKey: VUE_APP_EMAILJS_KEY,
         })
         .then(
           (response) => {
