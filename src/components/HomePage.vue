@@ -305,6 +305,7 @@ export default {
             this.showAlert = true
           },
           (error) => {
+            console.log('read...', service, template);
             console.log('FAILED...', error.text);
           },
         );
