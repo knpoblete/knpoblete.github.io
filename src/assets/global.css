@@ -246,6 +246,7 @@ footer {
 
 #contact-section .form {
     width: 500px;
+    width: 100%;
     /* text-align: left; */
 }
 

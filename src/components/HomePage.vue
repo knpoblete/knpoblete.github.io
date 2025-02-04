@@ -232,11 +232,11 @@
             <!-- <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p> -->
             
             <form ref="form" @submit.prevent="sendEmail" class="space-y-8" id="form">
-                <div>
+                <div class="sm:col-span-2">
                     <label for="email" class="block mb-2 text-md font-medium text-[#717568]">Email</label>
                     <input type="email" id="email" name="email" class="w-full p-2.5 text-[#717568] outline-[#F1BF98] shadow-sm bg-white border border-[#BACBA9] focus:border-[#BACBA9] focus:ring-[#BACBA9] rounded-lg" placeholder="name@mail.com" required>
                 </div>
-                <div>
+                <div class="sm:col-span-2">
                     <label for="name" class="block mb-2 text-md font-medium text-[#717568]">Name</label>
                     <input type="text" name="name" id="name" class="w-full p-2.5 text-[#717568] outline-[#F1BF98] shadow-sm bg-white border border-[#BACBA9] focus:border-[#BACBA9] focus:ring-[#BACBA9] rounded-lg" placeholder="Name" required>
                 </div>
