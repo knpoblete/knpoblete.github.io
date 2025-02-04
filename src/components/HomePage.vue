@@ -6,7 +6,7 @@
     <section id="about-section">
       <div class="container flex justify-center items-center flex-wrap sm:flex-col md:flex-row">
         <h2 > Hello, world!</h2>   
-        <div class="headshot flex justify-center items-center">
+        <div class="headshot justify-center items-center">
             <img class="photo" src="../assets/headshot.jpeg" width="200">
         </div>
           <!-- <div class="flex space-y-4 justify-items-start sm:flex-col md:flex-row"> -->
