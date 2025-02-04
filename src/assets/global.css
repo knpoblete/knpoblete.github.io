@@ -34,6 +34,10 @@ section h2 {
     position: relative;
 }
 
+section p {
+    width: 100%;
+}
+
 .logo {
     margin-left: 0.7rem;
     margin-top: 0.4rem;

@@ -5,6 +5,9 @@
   <!-- <main class="flex flex-wrap items-center justify-between mx-auto p-4"> -->
     <section id="about-section">
       <div class="container flex justify-center items-center flex-wrap sm:flex-col md:flex-row">
+          <div class="headshot flex justify-center items-center">
+            <img class="photo" src="../assets/headshot.jpeg" width="200">
+          </div>
           <div class="space-y-4 justify-items-start">
             <h2 > Hello, world!</h2>  
             <p class="bio">
@@ -20,9 +23,7 @@
             </p>  
         </div>
       
-          <div class="headshot flex justify-center items-center">
-            <img class="photo" src="../assets/headshot.jpeg" width="200">
-          </div>
+          
       </div>
       
     </section>
