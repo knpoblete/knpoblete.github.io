@@ -4,7 +4,7 @@
     
   <!-- <main class="flex flex-wrap items-center justify-between mx-auto p-4"> -->
     <section id="about-section">
-      <div class="container flex justify-center items-center flex-wrap sm:flex-col md:flex-row">
+      <div class="container justify-center items-center">
         <h2 > Hello, world!</h2>   
         <div class="headshot justify-center items-center">
             <img class="photo" src="../assets/headshot.jpeg" width="200">

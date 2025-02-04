@@ -42,7 +42,7 @@ section h2 {
 
 #about-section .bio {
     margin-bottom: 2rem;
-    padding-right: 8rem;
+    /* padding-right: 8rem; */
     /* max-width: 56.25rem; */
     /* font-size: 1rem; */
     text-align: center;
