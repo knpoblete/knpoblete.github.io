@@ -34,9 +34,6 @@ section h2 {
     position: relative;
 }
 
-section p {
-    width: 100%;
-}
 
 .logo {
     margin-left: 0.7rem;
@@ -46,7 +43,7 @@ section p {
 #about-section .bio {
     margin-bottom: 2rem;
     padding-right: 8rem;
-    max-width: 56.25rem;
+    /* max-width: 56.25rem; */
     /* font-size: 1rem; */
     text-align: left;
 }

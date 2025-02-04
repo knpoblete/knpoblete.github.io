@@ -10,7 +10,7 @@
           </div>
           <div class="space-y-4 justify-items-start">
             <h2 > Hello, world!</h2>  
-            <p class="bio">
+            <p class="bio w-full">
               I'm Kath, a data consultant with over 10 years experience in the analytics field. 
               I have held different titles in the past - Data Analyst, Data Scientist, Data Visualization Engineer to name some. 
               I enjoy crunching numbers, finding trends and patterns in data, turning raw insights into actionable insights, 
