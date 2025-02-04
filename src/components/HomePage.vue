@@ -11,7 +11,7 @@
         </div>
           <!-- <div class="flex space-y-4 justify-items-start sm:flex-col md:flex-row"> -->
              
-        <p class="bio justify-center items-center">
+        <p class="bio justify-center items-center px-4 sm:px-6 md:px-8 text-base sm:text-lg md:text-xl leading-relaxed max-w-md">
           I'm Kath, a data consultant with over 10 years experience in the analytics field. 
           I have held different titles in the past - Data Analyst, Data Scientist, Data Visualization Engineer to name some. 
           I enjoy crunching numbers, finding trends and patterns in data, turning raw insights into actionable insights, 
