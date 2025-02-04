@@ -62,9 +62,9 @@ section h2 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-#about-section .container {
+/* #about-section .container {
     padding: 0 4rem;
-}
+} */
 
 footer {
     background-color: #909090;
