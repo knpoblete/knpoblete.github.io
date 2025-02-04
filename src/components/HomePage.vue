@@ -8,9 +8,9 @@
           <div class="headshot flex justify-center items-center">
             <img class="photo" src="../assets/headshot.jpeg" width="200">
           </div>
-          <div class="space-y-4 justify-items-start">
+          <div class="flex space-y-4 justify-items-start sm:flex-col md:flex-row">
             <h2 > Hello, world!</h2>  
-            <p class="bio w-full">
+            <p class="bio flex-1">
               I'm Kath, a data consultant with over 10 years experience in the analytics field. 
               I have held different titles in the past - Data Analyst, Data Scientist, Data Visualization Engineer to name some. 
               I enjoy crunching numbers, finding trends and patterns in data, turning raw insights into actionable insights, 
