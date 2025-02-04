@@ -4,7 +4,7 @@
     
   <!-- <main class="flex flex-wrap items-center justify-between mx-auto p-4"> -->
     <section id="about-section">
-      <div class="container flex justify-center items-center">
+      <div class="container flex justify-center items-center sm:col-span-2">
         <div class="space-y-4 justify-items-start">
         <h2 > Hello, world!</h2>  
         <p class="bio">
