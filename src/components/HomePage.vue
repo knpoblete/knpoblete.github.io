@@ -4,22 +4,22 @@
     
   <!-- <main class="flex flex-wrap items-center justify-between mx-auto p-4"> -->
     <section id="about-section">
-      <div class="container flex justify-center items-center sm:col-span-1">
-        <div class="space-y-4 justify-items-start">
-        <h2 > Hello, world!</h2>  
-        <p class="bio">
-          I'm Kath, a data consultant with over 10 years experience in the analytics field. 
-          I have held different titles in the past - Data Analyst, Data Scientist, Data Visualization Engineer to name some. 
-          I enjoy crunching numbers, finding trends and patterns in data, turning raw insights into actionable insights, 
-          and presenting these using data storytelling principles. 
-          One skill that sets me apart is I combine UI/UX principles to data visualization and data storytelling to make user-centric analyses.
-          Apart from data analysis, I enjoy automating workflows and data pipelines. 
-          <br>
-          <br>
-          I'm also currently enrolled in City St. George's, University of London under the program MSc Human-Computer Interaction Design.
-        </p>  
-        
-      </div>
+      <!-- <div class="container flex justify-center items-center sm:col-span-1"> -->
+        <div class="container grid grid-cols-2 justify-center items-center sm:col-span-1"> 
+          <div class="space-y-4 justify-items-start">
+            <h2 > Hello, world!</h2>  
+            <p class="bio">
+              I'm Kath, a data consultant with over 10 years experience in the analytics field. 
+              I have held different titles in the past - Data Analyst, Data Scientist, Data Visualization Engineer to name some. 
+              I enjoy crunching numbers, finding trends and patterns in data, turning raw insights into actionable insights, 
+              and presenting these using data storytelling principles. 
+              One skill that sets me apart is I combine UI/UX principles to data visualization and data storytelling to make user-centric analyses.
+              Apart from data analysis, I enjoy automating workflows and data pipelines. 
+              <br>
+              <br>
+              I'm also currently enrolled in City St. George's, University of London under the program MSc Human-Computer Interaction Design.
+            </p>  
+        </div>
       
           <div class="headshot flex justify-center items-center">
             <img class="photo" src="../assets/headshot.jpeg" width="200">
