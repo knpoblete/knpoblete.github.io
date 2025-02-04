@@ -22,7 +22,7 @@
           <br>
           I'm also currently enrolled in City St. George's, University of London under the program MSc Human-Computer Interaction Design.
         </p>  
-        </div>
+        <!-- </div> -->
       
           
       </div>
