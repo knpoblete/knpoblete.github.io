@@ -166,6 +166,19 @@
         }"
         :navigation="true"
         :modules="modules"
+        :breakpoints= "{
+          320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 40
+          }}"
         class="mySwiper"
       >
       
@@ -187,7 +200,7 @@
         </swiper-slide>
         <swiper-slide>
             <div className="card-container space-y-4 justify-items-start">
-              <h3> Stata, R, and Tableau Data Visualization Scheme/Theme File Developer/Designer </h3>
+              <h3> Stata, R, and Tableau Data Visualization Scheme / Theme File Developer / Designer </h3>
               <h4> We hired Kath to create a ggplot2 theme for our organization's charts. She adapted our style guide into a custom built theme, and worked with us to revise, test, and document it for internal use. I really appreciated her responsiveness and flexibility throughout the course of the project, as well as her adaptability as some of the requirements changed, and the end product was high quality. Glad to have worked with her! </h4>
               <i class="fa-brands fa-upwork"></i>
             </div>
@@ -201,7 +214,7 @@
         </swiper-slide>
         <swiper-slide>
             <div className="card-container space-y-4 justify-items-start">
-              <h3> RStudio/Rshiny Project Help </h3>
+              <h3> RStudio / Rshiny Project Help </h3>
               <h4> I truly can't praise Katherine and her work enough, she is fantastic! She helped me work through a somewhat sensitive and unique RStudio/RShiny challenge that I had and she could not have done a better job. She was able to understand my somewhat complicated ask with what seemed like such ease, was very communicative throughout her work, and offered her expertise and suggestions throughout the project. I cannot recommend Katherine enough and I absolutely will be reaching out again! </h4>
               <i class="fa-brands fa-upwork"></i>
             </div>
