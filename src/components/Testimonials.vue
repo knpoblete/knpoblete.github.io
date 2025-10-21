@@ -88,14 +88,14 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  color: #111613;
+  /* color: #111613; */
   font-weight: 600;
   text-align: left;
 }
 
 h4 {
   font-size: 1rem;
-  color: #111613;
+  color: gray-600;
   text-align: left;
   line-height: 1.6;
 }
