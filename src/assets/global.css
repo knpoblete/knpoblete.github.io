@@ -171,7 +171,7 @@ footer {
 
 
 #testimonials-section {
-    padding: 4rem 2rem !important;
+    padding: 8rem 2rem !important;
     padding-bottom: 8rem !important;
     width: 100%;
     background-color: #E9D6D2;
@@ -179,23 +179,26 @@ footer {
 }
 
 #testimonials-section .card-container {
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 0.4)); 
-    padding: 2rem 2rem !important;
-    height: 100% !important;
-    backdrop-filter: blur(5px);
-    background-clip: padding-box;
-    border: rgb(255 255 255 / var(--tw-bg-opacity, 0.5));
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 16px;
+  background-color: rgb(255 255 255 / 0.8); /* ✅ similar to project cards */
+  border: 1px solid rgb(255 255 255 / 0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 340px;
+  height: 100%;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px);
+  background-clip: padding-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* ✅ gentle hover lift (same as projects) */
 #testimonials-section .card-container:hover {
-    transform: scale(1.05);
-    border: rgb(113 117 104 / var(--tw-bg-opacity, 0.2));
-    border-width: 5px;
-    border-style: solid;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: rgb(255 255 255 / 0.6);
 }
+
 
 #testimonials-section .swiper {
     width: 100%;
@@ -219,8 +222,16 @@ footer {
   }
 
 
+#testimonials-section .swiper-pagination-bullet {
+  background-color: #956860;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
 #testimonials-section .swiper-pagination-bullet-active {
-    background-color: #956860 !important;
+  background-color: #956860 !important; /* same dark accent as projects */
+  opacity: 1 !important;
+  transform: scale(1.2);
 }
 
 #testimonials-section .card-container h3 {
@@ -267,4 +278,25 @@ footer {
   background-color: #956860 !important;
   opacity: 1 !important;
   transform: scale(1.2);
+}
+
+/* 🔹 Center each slide's content */
+#testimonials-section .swiper-slide {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: stretch;     /* keeps height consistent */
+}
+
+/* 🔹 Ensure cards fill their slide cleanly */
+#testimonials-section .card-container {
+  width: 100%;
+  max-width: 360px; /* reasonable fixed width */
+  margin: 0 auto;   /* centers inside the slide */
+  box-sizing: border-box;
+}
+
+/* 🔹 Remove excess padding that may push slides */
+#testimonials-section .swiper {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }

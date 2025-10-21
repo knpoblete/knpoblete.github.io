@@ -95,7 +95,7 @@ const pauseVideo = (index) => {
 
 const clientProjects = [
   {
-    title: "ADB OOMP: Annual Report > Data Speak",
+    title: "ADB OOMP: Annual Report 2023 > Data Speak",
     description:
       "Data analysis and visualization of cases and issues of ADB Office of the Ombudsperson.",
     image: new URL('@/assets/projects/ADB_OOMP_AR_2023.png', import.meta.url).href,
@@ -125,6 +125,14 @@ const clientProjects = [
     video: new URL('@/assets/projects/NCR_2024.mov', import.meta.url).href,
     alt: "Video demonstration of the visualizations for the 2024 NatCom Year in Review.",
     link: "https://2024-natcom-year-in-review.my.canva.site/2024-natcom-design-bi-fold-main-design",
+  },
+  {
+    title: "UNARIO Milestones",
+    description:
+      "An interactive wheel to look back on UNARIO milestones in the recent years developed using Rive and Svelte.",
+    video: new URL('@/assets/projects/UNARIO_2025.mov', import.meta.url).href,
+    alt: "Video demonstration of the UNARIO Milestone Wheel",
+    link: "https://unario-milestones.onrender.com/",
   },
 ]
 </script>

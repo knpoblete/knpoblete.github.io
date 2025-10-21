@@ -139,99 +139,8 @@
 
     <section id="testimonials-section">
       <h2>Client Testimonials</h2>  
-      <!-- <h5>Most of these are from Upwork</h5> -->
-      <!-- <div class="swiper-container"> -->
-        <!-- <swiper
-        :slidesPerView="3"
-        :spaceBetween="30"
-        :autoplay="{
-          delay: 2500,
-          disableOnInteraction: false,
-        }"
-        :pagination="{
-          clickable: true,
-        }"
-        :navigation="true"
-        :modules="modules"
-        class="mySwiper"
-      > -->
-
-      
-      <!-- <div className="swiper-container"> -->
-        <swiper
-        :slidesPerView="3"
-        :spaceBetween="30"
-        :pagination="{
-          clickable: true,
-        }"
-        :navigation="true"
-        :modules="modules"
-        :breakpoints= "{
-          320: {
-          slidesPerView: 1,
-          spaceBetween: 20
-        },
-          480: {
-            slidesPerView: 2,
-            spaceBetween: 30
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 40
-          }}"
-        class="mySwiper"
-      >
-      
-        <swiper-slide>
-            <div className="card-container  space-y-4 justify-items-start">
-              <h3> Python & Data Visualization Genius To Build Reports </h3>
-              <h4> Katherine has been incredible to work with. Her thoughtfulness, her attention to detail, her skills—she has made our project infinitely better. I very much hope she's willing to work with us/me again. </h4>
-              <i class="fa-brands fa-upwork"></i>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div className="card-container space-y-4 justify-items-start">
-              <h3> Apache Superset BI Developer / Dashboard Designer </h3>
-              <h4> Katherine has been the right Person for our project at the right time.
-                  We needed a professional with who could turn an Apache superset dashboard into an appealing design that we could leverage to showcase to clients and investors. We did not believe the extend till which she was able to tweak the design - all expectations exceeded.
-                  Moreover, Katherine worked a whole weekend to make help us attain a strict deadline, which was we did not even ask her to do, but for which we are extremely thankful! </h4>
-              <i class="fa-brands fa-upwork"></i>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div className="card-container space-y-4 justify-items-start">
-              <h3> Stata, R, and Tableau Data Visualization Scheme / Theme File Developer / Designer </h3>
-              <h4> We hired Kath to create a ggplot2 theme for our organization's charts. She adapted our style guide into a custom built theme, and worked with us to revise, test, and document it for internal use. I really appreciated her responsiveness and flexibility throughout the course of the project, as well as her adaptability as some of the requirements changed, and the end product was high quality. Glad to have worked with her! </h4>
-              <i class="fa-brands fa-upwork"></i>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div className="card-container space-y-4 justify-items-start">
-              <h3> Data Visualization Expert Needed for User-Friendly Graph Creation </h3>
-              <h4> Fantastic partner to work with. Katherine was able to communicate and suggest ways of accomplishing the project I had not thought of. Communication was on point, always had an answer or solution within a day. 10/10 will look to work with Katherine again on future projects. </h4>
-              <i class="fa-brands fa-upwork"></i>
-            </div>            
-        </swiper-slide>
-        <swiper-slide>
-            <div className="card-container space-y-4 justify-items-start">
-              <h3> RStudio / Rshiny Project Help </h3>
-              <h4> I truly can't praise Katherine and her work enough, she is fantastic! She helped me work through a somewhat sensitive and unique RStudio/RShiny challenge that I had and she could not have done a better job. She was able to understand my somewhat complicated ask with what seemed like such ease, was very communicative throughout her work, and offered her expertise and suggestions throughout the project. I cannot recommend Katherine enough and I absolutely will be reaching out again! </h4>
-              <i class="fa-brands fa-upwork"></i>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div className="card-container space-y-4 justify-items-start">
-              <h3> Consultation </h3>
-              <h4> Katherine was excellent and a pleasure to work with. She exceeded my expectations, and I am delighted with the work. I would use her again. </h4>
-              <i class="fa-brands fa-upwork"></i>
-            </div>            
-        </swiper-slide>
-        
-      </swiper>
-      <!-- </div> -->
-      
-
-    <!-- </div> -->
+      <div><Testimonials /></div>
+    
       
 
     </section>  
@@ -276,6 +185,7 @@
 
 <script>
 import Projects from './Projects.vue'
+import Testimonials from './Testimonials.vue'
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
@@ -295,7 +205,8 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    Projects
+    Projects,
+    Testimonials,
   },
   setup() {
     return {
