@@ -26,9 +26,9 @@ section {
 
 section h2 {
     font-family: "Just Another Hand", serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 500;
-    color: #717568;
+    color: #111613;
     margin-bottom: 1rem;
     letter-spacing: 1px;
     position: relative;
@@ -67,7 +67,7 @@ section h2 {
 } */
 
 footer {
-    background-color: #909090;
+    background-color: #4C4C4C;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -75,8 +75,8 @@ footer {
 }
 
 #skills-section i {
-    font-size: 3rem;
-    color: #BACBA9;
+    font-size: 4rem;
+    color: #956860;
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 1rem 0; /* Add margin to ensure proper spacing */
 }
@@ -87,8 +87,8 @@ footer {
 }
 
 #skills-section img {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 1rem 0; /* Add margin to ensure proper spacing */
 }
@@ -115,8 +115,8 @@ footer {
 
 #skills-section h3 {
     text-align: center;
-    color: #717568;
-    background-color: #E1F4CB;
+    color: #111613;
+    background-color: #E9D6D2;
     /* width: 180px; */
     border-radius: 24px;
     padding: 12px;
@@ -125,7 +125,7 @@ footer {
 #skills-section h4 {
     text-align: center;
     color: #fff;
-    background-color: #BACBA9;
+    background-color: #956860;
     /* width: 180px; */
     border-radius: 24px;
     padding: 8px;
@@ -174,7 +174,7 @@ footer {
     padding: 4rem 2rem !important;
     padding-bottom: 8rem !important;
     width: 100%;
-    background-color: #E1F4CB;
+    background-color: #E9D6D2;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0) !important;
 }
 
@@ -220,26 +220,26 @@ footer {
 
 
 #testimonials-section .swiper-pagination-bullet-active {
-    background-color: #717568 !important;
+    background-color: #956860 !important;
 }
 
 #testimonials-section .card-container h3 {
     font-size: 1.5rem;
-    color: #717568;
+    color: #111613;
     opacity: 1 !important;
     text-align: left;
 }
 
 #testimonials-section .card-container h4 {
-    font-size: 0.9rem;
-    color: #717568;
+    font-size: 1rem;
+    color: gray-600;
     opacity: 1 !important;
     text-align: left;
 }
 
 #testimonials-section i {
     font-size: 2rem;
-    color: #717568;
+    color: #111613;
     transition: transform 0.3s ease, color 0.3s ease;
     margin: 2rem 0; /* Add margin to ensure proper spacing */
 }
@@ -254,5 +254,17 @@ footer {
 #contact-section p {
     /* font-family: "Just Another Hand", serif !important; */
     font-weight: bold !important;
-    color: #717568;
+    color: #111613;
+}
+
+/* .projects-swiper .swiper-pagination-bullet {
+  background-color: #956860;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+} */
+
+.projects-swiper .swiper-pagination-bullet-active {
+  background-color: #956860 !important;
+  opacity: 1 !important;
+  transform: scale(1.2);
 }

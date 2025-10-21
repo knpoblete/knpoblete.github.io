@@ -7,6 +7,7 @@
 <script>
 import HomePage from './components/HomePage.vue'
 import NavBar from './components/NavBar.vue'
+import Projects from './components/Projects.vue'
 
 export default {
   name: 'App',

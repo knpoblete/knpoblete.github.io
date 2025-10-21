@@ -1,6 +1,9 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true,
-  publicPath: 'https://knpoblete.github.io/'
-})
-
+// vue.config.js
+module.exports = {
+  pages: {
+    index: {
+      entry: 'src/main.js',
+      title: 'Katherine Poblete – Portfolio',
+    },
+  },
+};

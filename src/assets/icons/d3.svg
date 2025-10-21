@@ -8,22 +8,22 @@
 <path fill="url(#f)" d="M65.927 92.3745H36.1909c5.9856-3.6966 11.1602-8.5764 15.2221-14.2985l14.514 14.2985ZM45.9259 72.6702 31.5422 58.4961c-3.9737 8.5401-12.6333 14.4797-22.65736 14.4797H1v19.5436h7.88484c15.43076 0 29.05046-7.8927 37.04106-19.8492Z"></path>
 <defs>
 <linearGradient id="a" x1="-2439.19" x2="3131" y1="-2738.07" y2="3281.77" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BACBA9"></stop><stop offset="1" stop-color="#F7974E"></stop>
+<stop stop-color="#956860"></stop><stop offset="1" stop-color="#F7974E"></stop>
 </linearGradient>
 <linearGradient id="b" x1="-3792.83" x2="1498.86" y1="-3637.43" y2="1497.82" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BACBA9"></stop><stop offset="1" stop-color="#F7974E"></stop>
+<stop stop-color="#956860"></stop><stop offset="1" stop-color="#F7974E"></stop>
 </linearGradient>
 <linearGradient id="c" x1="-3312.94" x2="1320.59" y1="-3764.78" y2="1694.82" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BACBA9"></stop><stop offset="1" stop-color="#F7974E"></stop>
+<stop stop-color="#956860"></stop><stop offset="1" stop-color="#F7974E"></stop>
 </linearGradient><linearGradient id="d" x1="1066.49" x2="7288.79" y1="-158.457" y2="8523.99" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BACBA9"></stop><stop offset="1" stop-color="#F9A03C"></stop>
+<stop stop-color="#956860"></stop><stop offset="1" stop-color="#F9A03C"></stop>
 </linearGradient>
 <linearGradient id="e" x1="971.329" x2="7429" y1="251.205" y2="4152.61" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BACBA9"></stop>
+<stop stop-color="#956860"></stop>
 <stop offset="1" stop-color="#F68E48"></stop>
 </linearGradient>
 <linearGradient id="f" x1="3051.54" x2="3138.95" y1="856.902" y2="5078.01" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BACBA9"></stop>
+<stop stop-color="#956860"></stop>
 <stop offset="1" stop-color="#F7974E"></stop>
 </linearGradient>
 </defs>

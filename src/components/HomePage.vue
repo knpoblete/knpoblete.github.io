@@ -7,7 +7,7 @@
       <div class="container justify-center items-center">
         <h2 > Hello, world!</h2>   
         <div class="headshot flex justify-center items-center">
-            <img class="photo" src="../assets/headshot.jpeg" width="200">
+            <img class="photo" src="../assets/headshot.jpeg" width="200" alt="headshot of Kath">
         </div>
           <!-- <div class="flex space-y-4 justify-items-start sm:flex-col md:flex-row"> -->
              
@@ -37,79 +37,79 @@
         <div>
           <h3>Data Analysis, Statistical Analysis, Machine Learning</h3>
           <div class="tools-container space-y-4">
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-r-project"></i>
+            <i class="fa-brands fa-python" aria-label="Python programming language"></i>
+            <i class="fa-brands fa-r-project" aria-label="R programming language"></i>
           </div>
         </div>
-          
+
         <div>
           <h3>Data Visualization</h3>
           <div class="tools-container space-y-4">
-            <img src="../assets/icons/tableau.svg">
-            <img src="../assets/icons/powerbi.svg">
-            <img src="../assets/icons/superset.svg">
-            <img src="../assets/icons/ggplot.svg">
-            <img src="../assets/icons/matplotlib.svg">
-            <img src="../assets/icons/d3.svg">
+            <img src="../assets/icons/tableau.svg" alt="Tableau logo">
+            <img src="../assets/icons/powerbi.svg" alt="Power BI logo">
+            <img src="../assets/icons/superset.svg" alt="Apache Superset logo">
+            <img src="../assets/icons/ggplot.svg" alt="ggplot2 logo">
+            <img src="../assets/icons/matplotlib.svg" alt="Matplotlib logo">
+            <img src="../assets/icons/d3.svg" alt="D3.js logo">
           </div>
         </div>
 
         <div>
           <h3>Data Engineering</h3>
           <div class="tools-container space-y-4">
-            <img src="../assets/icons/postgresql.svg">
-            <i class="fa-brands fa-docker"></i>
-            <i class="fa-brands fa-aws"></i>
-            <img src="../assets/icons/gcp.svg">
-            
+            <img src="../assets/icons/postgresql.svg" alt="PostgreSQL logo">
+            <i class="fa-brands fa-docker" aria-label="Docker"></i>
+            <i class="fa-brands fa-aws" aria-label="Amazon Web Services"></i>
+            <img src="../assets/icons/gcp.svg" alt="Google Cloud Platform logo">
           </div>
         </div>
 
         <div>
           <h3>Frontend</h3>
           <div class="tools-container space-y-4">
-            <i class="fa-brands fa-vuejs"></i>
-            <img src="../assets/icons/shiny.svg">
+            <i class="fa-brands fa-vuejs" aria-label="Vue.js framework"></i>
+            <img src="../assets/icons/shiny.svg" alt="R Shiny logo">
+            <img src="../assets/icons/svelte.svg" alt="Svelte logo">
           </div>
         </div>
 
         <div>
           <h3>Version Control</h3>
           <div class="tools-container space-y-4">
-            <i class="fa-brands fa-git"></i>
-            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-git" aria-label="Git version control"></i>
+            <i class="fa-brands fa-github" aria-label="GitHub platform"></i>
           </div>
         </div>
-        
+
         <div>
           <h3>Wireframing (lofi/hifi), Prototyping</h3>
           <div class="tools-container space-y-4">
-            <i class="fa-brands fa-figma"></i>
-            <img src="../assets/icons/balsamiq.svg">
+            <i class="fa-brands fa-figma" aria-label="Figma design tool"></i>
+            <img src="../assets/icons/balsamiq.svg" alt="Balsamiq Mockups logo">
           </div>
         </div>
 
         <div>
           <h3>Human-Computer Interaction Design, User Experience (UX)</h3>
-          <div class="tools-container m-4 flex">
-            <h4>user research</h4>
-            <h4>usability testing</h4>
-            <h4>information architecture</h4>
-            <h4>interaction design</h4>
+          <div class="tools-container m-4 flex" role="list">
+            <h4 role="listitem">User research</h4>
+            <h4 role="listitem">Usability testing</h4>
+            <h4 role="listitem">Information architecture</h4>
+            <h4 role="listitem">Interaction design</h4>
+            <h4 role="listitem">Inclusive design</h4>
           </div>
         </div>
+
 
       </div>
     </section>
 
     <section id="projects-section">
       <h2>Projects</h2>
-      <div className="projects-container">
-   
-          <h3> Client Projects </h3>
 
-          <h3> Personal Projects </h3>
-        </div>
+      <div>
+    <Projects />
+  </div>
 
         <div className="x-card-container space-y-4">
           <!-- <h3> Apache Superset BI Developer / Dashboard Designer </h3>
@@ -248,18 +248,18 @@
             
             <form ref="form" @submit.prevent="sendEmail" class="space-y-8" id="form">
                 <div class="sm:col-span-2">
-                    <label for="email" class="block mb-2 text-md font-medium text-[#717568]">Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-2.5 text-[#717568] outline-[#F1BF98] shadow-sm bg-white border border-[#BACBA9] focus:border-[#BACBA9] focus:ring-[#BACBA9] rounded-lg" placeholder="name@mail.com" required>
+                    <label for="email" class="block mb-2 text-md font-medium text-[#111613]">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2.5 text-[#956860] outline-[#F1BF98] shadow-sm bg-white border border-[#956860] focus:border-[#956860] focus:ring-[#956860] rounded-lg" placeholder="name@mail.com" required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label for="name" class="block mb-2 text-md font-medium text-[#717568]">Name</label>
-                    <input type="text" name="name" id="name" class="w-full p-2.5 text-[#717568] outline-[#F1BF98] shadow-sm bg-white border border-[#BACBA9] focus:border-[#BACBA9] focus:ring-[#BACBA9] rounded-lg" placeholder="Name" required>
+                    <label for="name" class="block mb-2 text-md font-medium text-[#111613]">Name</label>
+                    <input type="text" name="name" id="name" class="w-full p-2.5 text-[#956860] outline-[#F1BF98] shadow-sm bg-white border border-[#956860] focus:border-[#956860] focus:ring-[#956860] rounded-lg" placeholder="Name" required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-md font-medium text-[#717568]">Message</label>
-                    <textarea id="message" name="message" rows="6" class="w-full p-2.5 text-[#717568] outline-[#F1BF98] shadow-sm bg-white border border-[#BACBA9] focus:border-[#BACBA9] focus:ring-[#BACBA9] rounded-lg" placeholder="How can I help you?"></textarea>
+                    <label for="message" class="block mb-2 text-md font-medium text-[#111613]">Message</label>
+                    <textarea id="message" name="message" rows="6" class="w-full p-2.5 text-[#956860] outline-[#F1BF98] shadow-sm bg-white border border-[#956860] focus:border-[#956860] focus:ring-[#956860] rounded-lg" placeholder="How can I help you?"></textarea>
                 </div>
-                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#717568] sm:w-fit hover:bg-[#F1BF98] focus:ring-2 focus:outline-[#F1BF98] focus:ring-[#F1BF98]">Send message</button>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#956860] sm:w-fit hover:bg-[#F1BF98] focus:ring-2 focus:outline-[#F1BF98] focus:ring-[#F1BF98]">Send message</button>
             </form>
         </div>
       <!-- </section> -->
@@ -275,6 +275,7 @@
 </template>
 
 <script>
+import Projects from './Projects.vue'
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
@@ -294,6 +295,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    Projects
   },
   setup() {
     return {
