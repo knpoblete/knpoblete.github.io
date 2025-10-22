@@ -138,6 +138,10 @@ footer {
     /* color: #3F4739; */
 }
 
+#projects-section {
+    display: block !important;
+}
+
 #projects-section .projects-container {
     display: flex;
     flex-direction: column;
@@ -176,6 +180,7 @@ footer {
     width: 100%;
     background-color: #E9D6D2;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0) !important;
+    display: block !important;
 }
 
 #testimonials-section .card-container {
