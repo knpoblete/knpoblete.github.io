@@ -35,7 +35,11 @@
             <i :class="testimonial.logo" style="font-size: 40px;"></i>
           </template>
           <template v-else>
-            <img :src="getLogo(testimonial.logo)" alt="logo" style="height: 40px;" />
+            <img
+              :src="getLogo(testimonial.logo)"
+              alt="logo"
+              style="height: 30px; display: block; object-fit: contain;"
+            />
           </template>
         </div>
       </swiper-slide>
@@ -63,7 +67,7 @@ const testimonials = [
     title: "UNICEF PFP - Dashboard Development (Power BI)",
     feedback:
       "Kath's work and data products have been a strategic asset to our team. The Power BI solutions she created aren’t just dashboards, they are scalable data products that strengthen our long-term strategy with 32 National Committees. The ability to track performance, benchmark across markets, and uncover insights at both a global/portfolio level and individual market levels will unlock new opportunities for assessing our impact and strategic direction. These tools will continue to empower our teams as our data needs evolve.",
-    logo: "/unicef.svg"
+    logo: new URL('@/assets/icons/unicef.svg', import.meta.url).href
   },
   {
     title: "Python & Data Visualization Genius To Build Reports",
