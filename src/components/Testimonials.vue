@@ -29,7 +29,22 @@
       >
         <div class="testimonial-card space-y-4 justify-items-start">
           <h3>{{ testimonial.title }}</h3>
-          <h4>{{ testimonial.feedback }}</h4>
+          <h4>
+            {{ testimonial.feedback.length > 300 
+                  ? testimonial.feedback.slice(0, 300) + '...' 
+                  : testimonial.feedback
+            }}
+          </h4>
+
+          <!-- Show Read More only if text is long -->
+          <button 
+            v-if="testimonial.feedback.length > 200"
+            class="read-more-btn"
+            @click="openModal(testimonial)"
+          >
+            Read More
+          </button>
+
           <!-- Dynamic logo handling -->
           <template v-if="testimonial.logo.includes('fa-')">
             <i :class="testimonial.logo" style="font-size: 40px;"></i>
@@ -38,12 +53,28 @@
             <img
               :src="getLogo(testimonial.logo)"
               alt="logo"
-              style="height: 30px; display: block; object-fit: contain;"
+              :style="{
+                height: testimonial.logoSize || '30px',
+                display: 'block',
+                objectFit: 'contain'
+              }"
             />
           </template>
         </div>
       </swiper-slide>
     </swiper>
+
+    <!-- Modal Overlay -->
+    <div v-if="showModal" class="modal-overlay" @click="closeModal"></div>
+
+    <!-- Modal Card -->
+    <div v-if="showModal" class="modal-card">
+      <button class="modal-close" @click="closeModal">✕</button>
+
+      <h3>{{ activeTestimonial.title }}</h3>
+      <p class="modal-text">{{ activeTestimonial.feedback }}</p>
+    </div>
+
   <!-- </section> -->
 </template>
 
@@ -53,6 +84,20 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Pagination, Autoplay } from "swiper/modules";
+import { ref } from "vue";
+
+const showModal = ref(false);
+const activeTestimonial = ref(null);
+
+const openModal = (testimonial) => {
+  activeTestimonial.value = testimonial;
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  showModal.value = false;
+  activeTestimonial.value = null;
+};
 
 
 const modules = [Pagination, Autoplay];
@@ -63,6 +108,13 @@ const getLogo = (path) => {
 };
 
 const testimonials = [
+  {
+    title: "ADB Office of the Ombudsperson",
+    feedback:
+      "I just wanted to say how impressed I am with the outstanding work Kath has done for the Office of the Ombudsperson at the Asian Development Bank. The way she processed and analyzed our aggregated data and turned it into clear actionable insights truly made a huge difference. Her interactive visualizations are not only visually appealing but also incredibly easy to navigate and understand—even for those of us who aren’t “data people.” Our annual reports have been transformed thanks to her contributions, and the improvements are so noticeable that other departments and organizational ombudsman programs have started following our lead. It’s no surprise to hear that professional colleagues from international organizations are now seeking her expertise, given the value she brings to every project. Her work ethic is truly admirable; she’s always reliable, thorough, and willing to go the extra mile. I especially admire her willingness to improve and expand her skills.  She seeks out new ideas and approaches to her work.  This encourages a culture of innovation in our office.  On top of all that, she’s a pleasure to work with and fit seamlessly into our team dynamic. Everyone appreciates her friendly and helpful attitude, and it’s clear she genuinely cares about the quality of her work. Thank you, Kath, for your dedication, your expertise, and for raising the bar for all of us. We feel very lucky to have had the chance to collaborate with you!",
+    logo: new URL('@/assets/icons/adb.svg', import.meta.url).href,
+    logoSize: "50px"
+  },
   {
     title: "UNICEF PFP - Dashboard Development (Power BI)",
     feedback:
@@ -208,4 +260,71 @@ h4 {
     padding: 1rem;
   }
 }
+
+/* Modal Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  z-index: 90;
+}
+
+/* Modal Card */
+.modal-card {
+  text-align: left;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 1rem;
+  z-index: 100;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 1.3rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-text {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Read More button */
+.read-more-btn {
+  margin-left: auto;
+  display: block;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #956860;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -48%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
 </style>
